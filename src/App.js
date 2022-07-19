@@ -3,6 +3,8 @@ import './App.css';
 import { Video } from './components/Video';
 import { Menu } from './components/Menu';
 
+import Parent from './components/Parent';
+
 export const VIDEOS = {
   fast: 'https://content.codecademy.com/courses/React/react_video-fast.mp4',
   slow: 'https://content.codecademy.com/courses/React/react_video-slow.mp4',
@@ -31,6 +33,9 @@ class App extends React.Component {
         <h1>Video Player</h1>
         <Menu chooseVideo={this.chooseVideo} />
         <Video src={this.state.src} />
+
+        {/* Add Parent component example here  */}
+        <Parent />
       </div>
     );
   }
