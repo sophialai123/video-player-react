@@ -7,8 +7,12 @@ export class Menu extends React.Component {
     this.handleClick = this.handleClick.bind(this)
   }
 
-  //need to wrap chooseVideo in a new function that
-  // can take an event object as an argument.
+
+  /* chooseVideo expects a string as an argument. 
+  But event handlers are automatically passed event objects, 
+  not strings.need to wrap chooseVideo in a new function that 
+  can take an event object as an argument. */
+
   handleClick(e) {
     var text = e.target.value;
     //equal the text of a clicked radio button.
